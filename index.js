@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import './style.css';
 
 const name = "Dipu";
+const el = <h1>My Name is {name}.</h1>;
 
 ReactDOM.render(
-  <h1>Hello, React!</h1>,
+  <h1>Hello, {name}!</h1>,
   document.getElementById('root')
 );
 
 ReactDOM.render(
-  <h1>My Name is {name}.</h1>,
+  el,
   document.getElementById('root1')
 );
